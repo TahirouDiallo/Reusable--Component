@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reusable Components</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <template id="comment">
+      <style>
+        .comment {
+          border: 1px solid #333;
+          margin-bottom: 1em;
+        }
+
+        .comment--head {
+          border-bottom: 1px solid #ccc;
+          padding: 0.25rem 0.5rem;
+        }
+
+        .comment--body {
+          padding: 0.5rem;
+        }
+      </style>
+      <article class="comment">
+        <header class="comment--head">
+          <p>
+            <span class="comment--name"></span> (<span
+              class="comment--email"
+            ></span
+            >)
+          </p>
+        </header>
+        <p class="comment--body"></p>
+      </article>
+    </template>
+
+    <my-comment
+      name="Katie"
+      email="Katie@moonsalon.com"
+      body="Welcome to Moon Hair Salon."
+    ></my-comment>
+    <my-comment
+      name="max"
+      email="max@icecreambar.com"
+      body="Max ice cream bar."
+    ></my-comment>
+    <my-comment
+      name="Hawa"
+      email="Hawa@guineaconnections.com"
+      body="Guinea, Conakry connections us."
+    ></my-comment>
+  </body>
+</html>
